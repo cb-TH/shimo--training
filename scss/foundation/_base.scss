@@ -1,0 +1,28 @@
+// 基本スタイル
+:root {
+    --primary-color: #191919;
+    --text-color: #333;
+    --text-light: #fff;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    background-color: #fff;
+    padding-top: 70px; // ヘッダーの高さ分パディング
+}
+
+// 見出しスタイル
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+// リンクのホバー効果
+a {
+    transition: var(--transition);
+    
+    &:hover {
+        opacity: 0.8;
+    }
+} 

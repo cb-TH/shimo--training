@@ -1,0 +1,34 @@
+// ==========================================================================
+// FLOCSS - Foundation, Layout, Object, Component, CSS
+// ==========================================================================
+
+// Foundation
+// --------------------------------------------------------------------------
+// プロジェクトにおけるベーススタイル
+@import "foundation/reset";
+@import "foundation/base";
+
+// Layout
+// --------------------------------------------------------------------------
+// ページレイアウトに関するスタイル
+@import "layout/header";
+@import "layout/main";
+
+// Object
+// --------------------------------------------------------------------------
+// プロジェクトにおけるビジュアルパターン
+
+// Component
+// 再利用可能なコンポーネント
+@import "object/component/navbar";
+@import "object/component/article-card";
+
+// Project
+// プロジェクト固有のスタイル
+@import "object/project/hero";
+
+// Utility
+// ユーティリティクラス（必要に応じて追加）
+// @import "object/utility/text";
+// @import "object/utility/margin";
+// @import "object/utility/padding"; 

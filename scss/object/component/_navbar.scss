@@ -1,0 +1,58 @@
+// ナビゲーションバー
+.c-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+        
+        &--logo {
+            margin-right: 60px;
+            
+            img {
+                height: 40px;
+                width: auto;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            margin: 0 8px;
+            
+            &--logo {
+                margin-right: 30px;
+                
+                img {
+                    height: 30px;
+                }
+            }
+        }
+    }
+    
+    &__link {
+        color: var(--text-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 4px;
+        transition: var(--transition);
+        
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            opacity: 1;
+        }
+    }
+    
+    &__icon {
+        font-size: 18px;
+        color: var(--text-light);
+        
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+} 
